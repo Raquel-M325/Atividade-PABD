@@ -2,7 +2,7 @@ CREATE VIEW v_staff_performance AS
 SELECT 
     s.staff_id, 
     s.first_name || ' ' || s.last_name AS nome_completo,
-    c.city || ' ' || c.country AS localizacao,
+    c.city || ' ' || co.country AS localizacao,
     COALESCE(r.total_locacoes, 0) AS total_locacoes,
     COALESCE(p.total_arrecadado, 0) AS total_arrecadado
 

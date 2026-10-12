@@ -20,5 +20,5 @@ $$ language plpgsql;
 create trigger trg_film_cost_audit
 after update on film
 for each row
-when (replacement_cost is distinct from new.replacement_cost)
+when (old.replacement_cost is distinct from new.replacement_cost)
 execute function audit_film_cost();

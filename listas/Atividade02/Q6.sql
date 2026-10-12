@@ -1,5 +1,5 @@
 create index idx_customer_email_lower
-on custumer (lower(email));
+on customer (lower(email));
 
 select *
 from customer
