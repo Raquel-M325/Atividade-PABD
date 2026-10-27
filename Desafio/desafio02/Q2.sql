@@ -12,7 +12,8 @@ select * from inventory;
 savepoint estoque_atualizado;
 
 insert into inventory (id, name, quantity, price, description) values 
-    (1, 'Item 1', 10, 100.00, 'Description for Item 1');
+    (1, 'Item 1', 10, 100.00, 'Description for Item 1'),
+    (2, '', 0, 50.00, 'Há nada aqui');
 
 rollback to estoque_atualizado;
 
