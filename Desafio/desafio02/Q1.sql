@@ -6,7 +6,8 @@ create table customer (
     telefone varchar(20)
 );
 
-insert into customer (id, name, email, endereco, telefone) values (1, 'John Doe', 'john.doe@example.com', '123 Main St', '555-1234');
+insert into customer (id, name, email, endereco, telefone) values 
+    (1, 'John Doe', 'john.doe@example.com', '123 Main St', '555-1234');
 
 select * from customer;
 
